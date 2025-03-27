@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.mainContainer{
+    @apply  bg-primary flex justify-center items-center w-full h-screen
+}
+.todoBox{
+    @apply  bg-secondary p-3 rounded-xl w-1/2 h-1/2 flex flex-col gap-4
+}
+.input{
+    @apply w-full outline-none border-none px-3 py-1 rounded-xl
+}
+.ul_box{
+    @apply overflow-auto
+}
