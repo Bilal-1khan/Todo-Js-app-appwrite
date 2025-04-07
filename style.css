@@ -10,16 +10,43 @@
     list-style: none;
     text-decoration: none;
 }
-
+:root{
+    --bacgroundTheme : #242424;
+    --font-color : #fff;
+    --delete : red;
+}
 .mainContainer{
     @apply  bg-primary flex justify-center items-center w-full h-screen
 }
 .todoBox{
-    @apply  bg-secondary p-3 rounded-xl w-1/2 h-1/2 flex flex-col gap-4
+    @apply  bg-secondary p-3 rounded-xl w-1/2 h-[70%] overflow-auto flex flex-col gap-4
 }
 .input{
-    @apply w-full outline-none border-none px-3 py-1 rounded-xl
+    @apply w-[90%] outline-none border-none px-3 py-1 rounded-xl
 }
 .ul_box{
     @apply overflow-auto
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .7rem;
+    border-radius: .8rem;
+    color: var(--font-color);
+    margin: .4rem 0px;
+    background-color: var(--bacgroundTheme);
+}
+.delete{
+    color: var(--delete);
+    cursor: pointer;
+    margin: 0px .5rem;
+}
+#complete{cursor: pointer;}
+.completed-true{
+    text-decoration: line-through;
+    text-decoration-thickness:2px;
+    text-decoration-color:var(--font-color) ;
+    font-style: italic;
+    
 }

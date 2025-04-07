@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Todo App | Appwrite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div id="app">
       <div class="mainContainer">
         <div class="todoBox">
-          <div class="inputDiv">
-            <input 
-            type="text" 
-            placeholder="write todo"
-            class="input" >
-          </div>
-          <ul class="ul_box">
-            <li>testing</li>
-          </ul>
+          <form action="" id="form">
+            <div class="inputDiv my-2">
+              <input 
+              type="text" 
+              name="body"
+              placeholder="write todo"
+              class="input" >
+              <button 
+              class="bg-cyan-500 px-3 py-1 rounded-xl capitalize text-white cursor-pointer">
+              add
+            </button>
+            </div>
+            <ul class="ul_box">
+            </ul>
+          </form>
+          
         </div>
       </div>
     </div>
