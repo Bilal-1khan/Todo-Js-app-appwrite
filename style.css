@@ -21,8 +21,14 @@
 .todoBox{
     @apply  bg-secondary p-3 rounded-xl w-1/2 h-[70%] overflow-auto flex flex-col gap-4
 }
+.inputDiv{
+    @apply flex gap-2 max-sm:flex-col
+}
 .input{
-    @apply w-[90%] outline-none border-none px-3 py-1 rounded-xl
+    @apply w-[90%] max-sm:w-full outline-none border-none px-3 py-1 rounded-xl
+}
+.btn{
+    @apply bg-cyan-500 px-3 py-1 rounded-xl capitalize text-white cursor-pointer
 }
 .ul_box{
     @apply overflow-auto
